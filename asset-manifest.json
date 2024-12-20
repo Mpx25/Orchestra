@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.770ec520.css",
-    "main.js": "/react-gh-pages/static/js/main.9f5ba7e1.js",
-    "static/js/488.169330cc.chunk.js": "/react-gh-pages/static/js/488.169330cc.chunk.js",
-    "index.html": "/react-gh-pages/index.html",
-    "main.770ec520.css.map": "/react-gh-pages/static/css/main.770ec520.css.map",
-    "main.9f5ba7e1.js.map": "/react-gh-pages/static/js/main.9f5ba7e1.js.map",
-    "488.169330cc.chunk.js.map": "/react-gh-pages/static/js/488.169330cc.chunk.js.map"
+    "main.css": "/Orchestra/static/css/main.770ec520.css",
+    "main.js": "/Orchestra/static/js/main.24afbe46.js",
+    "static/js/488.169330cc.chunk.js": "/Orchestra/static/js/488.169330cc.chunk.js",
+    "index.html": "/Orchestra/index.html",
+    "main.770ec520.css.map": "/Orchestra/static/css/main.770ec520.css.map",
+    "main.24afbe46.js.map": "/Orchestra/static/js/main.24afbe46.js.map",
+    "488.169330cc.chunk.js.map": "/Orchestra/static/js/488.169330cc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.770ec520.css",
-    "static/js/main.9f5ba7e1.js"
+    "static/js/main.24afbe46.js"
   ]
 }
