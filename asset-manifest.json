@@ -1,15 +1,21 @@
 {
   "files": {
-    "main.css": "/Orchestra/static/css/main.770ec520.css",
-    "main.js": "/Orchestra/static/js/main.24afbe46.js",
+    "main.css": "/Orchestra/static/css/main.a75c7b43.css",
+    "main.js": "/Orchestra/static/js/main.8519b3a7.js",
     "static/js/488.169330cc.chunk.js": "/Orchestra/static/js/488.169330cc.chunk.js",
+    "static/media/Bg.png": "/Orchestra/static/media/Bg.94c06dcf8b9ba5f995ee.png",
+    "static/media/performance.jpg": "/Orchestra/static/media/performance.3e9eb91d78ae1e54257d.jpg",
+    "static/media/Pperformance.jpg": "/Orchestra/static/media/Pperformance.4d615004c03cb15c6151.jpg",
+    "static/media/Orchestra.jpg": "/Orchestra/static/media/Orchestra.8527dbec14a379595a54.jpg",
+    "static/media/io.jpg": "/Orchestra/static/media/io.42980ff073431c45ab9e.jpg",
+    "static/media/logo.png": "/Orchestra/static/media/logo.159ad2a1e25f78a979c7.png",
     "index.html": "/Orchestra/index.html",
-    "main.770ec520.css.map": "/Orchestra/static/css/main.770ec520.css.map",
-    "main.24afbe46.js.map": "/Orchestra/static/js/main.24afbe46.js.map",
+    "main.a75c7b43.css.map": "/Orchestra/static/css/main.a75c7b43.css.map",
+    "main.8519b3a7.js.map": "/Orchestra/static/js/main.8519b3a7.js.map",
     "488.169330cc.chunk.js.map": "/Orchestra/static/js/488.169330cc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.770ec520.css",
-    "static/js/main.24afbe46.js"
+    "static/css/main.a75c7b43.css",
+    "static/js/main.8519b3a7.js"
   ]
 }
