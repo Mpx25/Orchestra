@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "nama": "Devin Bagas Pratama",
+      "alat": "Triangle",
+      "gambar": "https://via.placeholder.com/200",
+      "suka": 69
+    },
+    {
+      "id": 2,
+      "nama": "Marini",
+      "alat": "Flute",
+      "gambar": "https://via.placeholder.com/200",
+      "suka": 64
+    },
+    {
+      "id": 3,
+      "nama": "Metta F. Ariono",
+      "alat": "Flute",
+      "gambar": "https://via.placeholder.com/200",
+      "suka": 66
+    },
+    {
+      "id": 4,
+      "nama": "Michelle Siswanto",
+      "alat": "Biola",
+      "gambar": "https://via.placeholder.com/200",
+      "suka": 65
+    },
+    {
+      "id": 5,
+      "nama": "Nama Lain",
+      "alat": "Cello",
+      "gambar": "https://via.placeholder.com/200",
+      "suka": 45
+    }
+  ]
+  
