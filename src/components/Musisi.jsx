@@ -5,35 +5,63 @@ export const Musisi = () => {
     const [formData, setFormData] = useState({ nama: '', alat: '', gambar: '', suka: 0 });
     const [isEditing, setIsEditing] = useState(null); // Menyimpan id musisi yang sedang diedit
 
+    // Muat data dari server saat komponen pertama kali di-render
     useEffect(() => {
-        fetch('/orang.json')
+        fetch('http://localhost:5000/musisi') // Pastikan endpoint ini sesuai dengan backend Anda
             .then((response) => response.json())
             .then((data) => {
-                console.log("Data musisi yang dimuat:", data);
                 setMusisiData(data);
             })
             .catch((error) => console.error('Error loading data:', error));
     }, []);
 
+    // Fungsi untuk menambahkan musisi
     const addMusisi = (event) => {
         event.preventDefault();
         const newMusisi = {
-            id: musisiData.length + 1,
+            id: musisiData.length ? musisiData[musisiData.length - 1].id + 1 : 1,
             ...formData,
         };
-        setMusisiData([...musisiData, newMusisi]);
-        setFormData({ nama: '', alat: '', gambar: '', suka: 0 });
+        fetch('http://localhost:5000/musisi', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(newMusisi),
+        })
+        .then((response) => response.json())
+        .then((data) => {
+            setMusisiData((prevData) => [...prevData, data]);
+            setFormData({ nama: '', alat: '', gambar: '', suka: 0 });
+        })
+        .catch((error) => console.error('Error adding musisi:', error));
     };
 
-    const deleteMusisi = (id) => {
-        setMusisiData(musisiData.filter((musisi) => musisi.id !== id));
-    };
-
+    // Fungsi untuk mengedit musisi
     const editMusisi = (id, updatedData) => {
-        setMusisiData(
-            musisiData.map((musisi) => (musisi.id === id ? { ...musisi, ...updatedData } : musisi))
-        );
-        setIsEditing(null); // Reset editing state setelah selesai
+        fetch(`http://localhost:5000/musisi/${id}`, {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(updatedData),
+        })
+        .then((response) => response.json())
+        .then((data) => {
+            setMusisiData((prevData) =>
+                prevData.map((musisi) =>
+                    musisi.id === id ? { ...musisi, ...data } : musisi
+                )
+            );
+        })
+        .catch((error) => console.error('Error updating musisi:', error));
+    };
+
+    // Fungsi untuk menghapus musisi
+    const deleteMusisi = (id) => {
+        fetch(`http://localhost:5000/musisi/${id}`, {
+            method: 'DELETE',
+        })
+        .then(() => {
+            setMusisiData((prevData) => prevData.filter((musisi) => musisi.id !== id));
+        })
+        .catch((error) => console.error('Error deleting musisi:', error));
     };
 
     return (
@@ -75,12 +103,11 @@ export const Musisi = () => {
                     <div key={musisi.id} className="bg-gray-800 rounded-lg shadow-lg overflow-hidden text-white">
                         <img
                             src={musisi.gambar}
-                            alt={`${musisi.nama} - ${musisi.alat}`}
+                            alt={musisi.nama}
                             className="w-full h-56 object-cover"
                         />
                         <div className="p-4">
                             {isEditing === musisi.id ? (
-                                // Form input untuk mengedit nama dan alat musik
                                 <div>
                                     <input
                                         type="text"
@@ -116,6 +143,7 @@ export const Musisi = () => {
                                                 nama: musisi.nama,
                                                 alat: musisi.alat,
                                             });
+                                            setIsEditing(null);
                                         }}
                                         className="bg-blue-500 text-white px-4 py-2 rounded"
                                     >
