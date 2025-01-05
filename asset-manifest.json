@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Orchestra/static/css/main.d00c5eb9.css",
-    "main.js": "/Orchestra/static/js/main.e6df5ff8.js",
+    "main.css": "/Orchestra/static/css/main.8222a02d.css",
+    "main.js": "/Orchestra/static/js/main.d8c4e155.js",
     "static/js/488.169330cc.chunk.js": "/Orchestra/static/js/488.169330cc.chunk.js",
     "static/media/Bg.png": "/Orchestra/static/media/Bg.94c06dcf8b9ba5f995ee.png",
     "static/media/performance.jpg": "/Orchestra/static/media/performance.3e9eb91d78ae1e54257d.jpg",
@@ -10,12 +10,12 @@
     "static/media/io.jpg": "/Orchestra/static/media/io.42980ff073431c45ab9e.jpg",
     "static/media/logo.png": "/Orchestra/static/media/logo.159ad2a1e25f78a979c7.png",
     "index.html": "/Orchestra/index.html",
-    "main.d00c5eb9.css.map": "/Orchestra/static/css/main.d00c5eb9.css.map",
-    "main.e6df5ff8.js.map": "/Orchestra/static/js/main.e6df5ff8.js.map",
+    "main.8222a02d.css.map": "/Orchestra/static/css/main.8222a02d.css.map",
+    "main.d8c4e155.js.map": "/Orchestra/static/js/main.d8c4e155.js.map",
     "488.169330cc.chunk.js.map": "/Orchestra/static/js/488.169330cc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d00c5eb9.css",
-    "static/js/main.e6df5ff8.js"
+    "static/css/main.8222a02d.css",
+    "static/js/main.d8c4e155.js"
   ]
 }
