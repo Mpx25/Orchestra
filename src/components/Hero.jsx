@@ -5,6 +5,7 @@ import "swiper/css"; // Import default Swiper styles
 import "swiper/css/navigation"; // If you want navigation (arrows)
 import "swiper/css/pagination";
 import { Navigation, Pagination, Autoplay } from "swiper/modules"; // Swiper modules
+import { useNavigate } from "react-router-dom";
 
 // Import images for the slider and background
 import Photo1 from "../assets/Orchestra.jpg";
@@ -14,6 +15,7 @@ import BackgroundImage from "../assets/io.jpg";
 import Logo from "../assets/logo.png"
 
 export const Hero = () => {
+    const navigate = useNavigate();
   return (
     <div className='text-[#C1BAA1]'>
       <div className='relative'>
@@ -49,7 +51,8 @@ export const Hero = () => {
                 <p className="text-base md:text-xl mt-2">
                   Konser Pra-Tur Austria-Italia
                 </p>
-                <button className="mt-6 px-6 py-3 bg-[#E38E49] text-white font-bold uppercase rounded">
+                <button className="mt-6 px-6 py-3 bg-[#E38E49] text-white font-bold uppercase rounded"
+                 onClick={() => navigate("/berita")}>
                   Book Now
                 </button>
               </div>
@@ -268,7 +271,9 @@ export const Hero = () => {
                 <li>Special seating options</li>
                 <li>Memorable photo opportunities</li>
               </ul>
-              <button className="mt-6 px-6 py-3 bg-white text-[#E38E49] font-bold uppercase rounded">
+              <button className="mt-6 px-6 py-3 bg-white text-[#E38E49] font-bold uppercase rounded"
+              onClick={() => navigate("/konser")}
+              >
                 Buy Tickets
               </button>
             </div>

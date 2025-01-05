@@ -5,22 +5,22 @@ const newsData = [
     id: 1,
     title: "BOOK YOUR VVIP SOFA ON THE SPOT",
     content:
-      "Elevate your ultimate festival experience by booking your VVIP Sofa. Contact us at ...",
-    image: "https://via.placeholder.com/300", // Ganti dengan URL gambar
+      "jakarta, 3 Januari 2025 - sebuah konser orkestra klasik yang luar biasa menggetarkan penonton di gedung konser. orkestra yang terkenal dengan keahluan dan penghayatannya dalam musik kalisk berhasil menghandirkan pengalaman musikal  yang mendalam bagi ribuan penonton yang hadir",
+    image: "https://via.placeholder.com/300",
   },
   {
     id: 2,
     title: "Orchestra E-VOUCHER EXCHANGE GUIDELINE",
     content:
       "IMPORTANT: Exchange your e-vouchers before D-Day of the event. Visit ...",
-    image: "https://via.placeholder.com/300", // Ganti dengan URL gambar
+    image: "https://via.placeholder.com/300",
   },
   {
     id: 3,
     title: "#orchestra TICKET UPGRADES ARE AVAILABLE",
     content:
       "#DWP24 is about creating lasting memories, and upgrading your tickets can enhance your experience. Learn more ...",
-    image: "https://via.placeholder.com/300", // Ganti dengan URL gambar
+    image: "https://via.placeholder.com/300",
   },
 ];
 

@@ -1,7 +1,24 @@
-import React from 'react';
+// import React from 'react'
+// import Tiket, { Ticket } from '../components/Ticket'
+
+// export const Konser = () => {
+//   return (
+//     <div>
+//       <Ticket />
+//     </div>
+//   )
+// }
+
+// export default Konser;
+import React from "react";
+import Ticket from "../components/Ticket"; // Import default export dari Ticket.jsx
 
 const Konser = () => {
-  return <h1 className="text-center text-2xl">Halaman Konser</h1>;
+  return (
+    <div>
+      <Ticket /> {/* Memanggil komponen Ticket */}
+    </div>
+  );
 };
 
 export default Konser;

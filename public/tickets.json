@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "REGULER-SEAT",
+    "description": "Entry before 18.00 WIB",
+    "price": 1750000,
+    "eventTime": "18.00 WIB, 25 January 2025"
+  },
+  {
+    "id": 2,
+    "name": "General Admission",
+    "description": "Presale",
+    "price": 1900000,
+    "eventTime": "19.00 WIB, 25 January 2025"
+  },
+  {
+    "id": 3,
+    "name": "VIP",
+    "description": "Presale",
+    "price": 3950000,
+    "eventTime": "20.00 WIB, 25 January 2025"
+  }
+]

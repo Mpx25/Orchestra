@@ -44,7 +44,7 @@ export const Navbar = () => {
       </Link>
 
       {/* Navbar Links */}
-      <ul className="hidden md:flex space-x-6">
+      <ul className="hidden md:flex space-x-6 mr-10">
         <li className="group relative p-4">
           <Link to="/" className="hover:text-gray-300">HOME</Link>
           <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-[#F1F0E8] transition-all duration-300 group-hover:w-full"></span>

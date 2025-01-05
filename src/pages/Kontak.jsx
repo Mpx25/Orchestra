@@ -1,7 +1,11 @@
 import React from 'react';
+import Contact from '../components/Contact';
+// import Map from '../components/Map';
 
 const Kontak = () => {
-  return <h1 className="text-center text-2xl">Halaman Kontak</h1>;
+  return (
+    <Contact />
+  )
 };
 
 export default Kontak;
