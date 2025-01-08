@@ -15,7 +15,7 @@ import BackgroundImage from "../assets/io.jpg";
 import Logo from "../assets/logo.png"
 
 export const Hero = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   return (
     <div className='text-[#C1BAA1]'>
       <div className='relative'>
@@ -52,7 +52,7 @@ export const Hero = () => {
                   Konser Pra-Tur Austria-Italia
                 </p>
                 <button className="mt-6 px-6 py-3 bg-[#E38E49] text-white font-bold uppercase rounded"
-                 onClick={() => navigate("/berita")}>
+                  onClick={() => navigate("/berita")}>
                   Book Now
                 </button>
               </div>
@@ -257,7 +257,7 @@ export const Hero = () => {
           {/* Gambar */}
           <div className="flex flex-col md:flex-row items-center">
             <img
-              src={Logo} 
+              src={Logo}
               alt="Ticket Benefits"
               className="h-[550px] w-full mx-[150px] md:w-1/3 rounded-lg object-cover mb-6 md:mb-0 md:mr-6"
             />
@@ -272,12 +272,30 @@ export const Hero = () => {
                 <li>Memorable photo opportunities</li>
               </ul>
               <button className="mt-6 px-6 py-3 bg-white text-[#E38E49] font-bold uppercase rounded"
-              onClick={() => navigate("/konser")}
+                onClick={() => navigate("/konser")}
               >
                 Buy Tickets
               </button>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div
+        className="flex justify-center items-center w-full"
+        style={{ zIndex: 1 }}
+      >
+        <div className="relative mt-2 w-full max-w-4xl p-5">
+          <iframe
+            style={{ borderRadius: '12px' }}
+            src="https://open.spotify.com/embed/playlist/1iFbvD1Kmto3GDHUkVzH3t?utm_source=generator"
+            width="100%"
+            height="352"
+            frameBorder="0"
+            allowFullScreen
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
         </div>
       </div>
 
